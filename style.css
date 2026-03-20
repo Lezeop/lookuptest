@@ -1,12 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 50px;
+  padding: 40px;
 }
 
 h1 {
   font-size: 40px;
-  margin-bottom: 10px;
 }
 
 .box {
@@ -16,23 +15,15 @@ h1 {
 button {
   padding: 12px 24px;
   font-size: 16px;
-  cursor: pointer;
-  border: none;
-  background-color: black;
+  background: black;
   color: white;
+  border: none;
   border-radius: 6px;
-}
-
-button:hover {
-  background-color: #333;
+  cursor: pointer;
 }
 
 .hidden {
   display: none;
-}
-
-#loading {
-  margin-top: 20px;
 }
 
 #result {
@@ -52,8 +43,13 @@ button:hover {
   filter: blur(4px);
 }
 
+input[type="email"] {
+  padding: 10px;
+  width: 250px;
+}
+
 .note {
+  margin-top: 20px;
   font-size: 12px;
   color: gray;
-  margin-top: 10px;
 }
