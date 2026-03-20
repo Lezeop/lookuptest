@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOOKUP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>LOOKUP</h1>
+  <p>Find what your favorite celebrity is wearing — just upload a photo</p>
+
+  <div class="box">
+    <input type="file" id="upload" accept="image/*">
+    <br><br>
+    <button onclick="fakeUpload()">Upload Photo</button>
+  </div>
+
+  <p class="note">Your photo is only used for matching and is not stored.</p>
+
+  <div id="loading" class="hidden">
+    <p>Analyzing image...</p>
+  </div>
+
+  <div id="result" class="hidden">
+    <h3>🔥 LOOKUP found similar items</h3>
+    <div class="fake-items">
+      <div class="item">ZARA Jacket (blurred)</div>
+      <div class="item">Musinsa Top (blurred)</div>
+      <div class="item">H&M Pants (blurred)</div>
+    </div>
+    <br>
+    <button onclick="joinWaitlist()">Unlock Results</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
